@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather App</title>
-        <style type="text/css">
-            html {
-                height: 100%;
-            }
-            body {
-                height: 100%;
-                margin: 0;
-                background: #0a1f44;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-            }
-        
-            .city {
-                align-items: center;
-                width: 80%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                padding: 40px 8%;
-                border-radius: 20px;
-                background: #fff;
-            }
 
-            .city-name {
-                font-size: 2em;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="city">
-            <h2 class="city-name">
-                <span>For checking current weather, you have to go online!</span>
-            </h2>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../public/images/weather.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .city {
+            align-items: center;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 40px 8%;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+        }
+
+        .city-name {
+            font: 2em 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city">
+        <h2 class="city-name">
+            <span>For checking current weather, you have to go online!</span>
+        </h2>
+    </div>
+</body>
+
 </html>
